@@ -10,5 +10,8 @@ if not os.path.exists(MODELS_PATH):
 	os.mkdir(MODELS_PATH)
 app.config['MODELS_PATH'] = MODELS_PATH
 
+STATIC_PATH = os.path.join(app.root_path, 'static')
+app.config['STATIC_PATH'] = STATIC_PATH
+
 
 from rainfall import routes

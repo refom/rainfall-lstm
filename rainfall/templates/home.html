@@ -20,7 +20,7 @@
   
 	  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-5 container-fluid">
 		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-		  <h1 class="h2">Peramalan Curah Hujan dengan LSTM</h1>
+		  <h1 class="h2 white-text">Peramalan Curah Hujan dengan LSTM</h1>
 		</div>
 
 		<div>
@@ -40,9 +40,9 @@
 			  <div class="form-floating mb-3">
 				
 				{% if kemarin %}
-					<input name="kemarin" type="number" class="form-control" id="floatingInput" placeholder="data-sebelum" value="{{kemarin}}">
+					<input name="kemarin" type="text" class="form-control" id="floatingInput" placeholder="data-sebelum" value="{{kemarin}}">
 				{% else %}
-					<input name="kemarin" type="number" class="form-control" id="floatingInput" placeholder="data-sebelum">
+					<input name="kemarin" type="text" class="form-control" id="floatingInput" placeholder="data-sebelum">
 				{% endif %}
 
 				<label for="floatingInput">Curah Hujan Kemarin</label>
@@ -50,9 +50,9 @@
 			  <div class="form-floating mb-3">
 				
 				{% if hasil %}
-					<input name="prediksi" type="number" class="form-control" id="floatingPrediksi" placeholder="prediksi" value="{{hasil[0][0]}}">
+					<input name="prediksi" type="text" class="form-control" id="floatingPrediksi" placeholder="prediksi" value="{{hasil}}">
 				{% else %}
-					<input name="prediksi" type="number" class="form-control" id="floatingPrediksi" placeholder="prediksi">
+					<input name="prediksi" type="text" class="form-control" id="floatingPrediksi" placeholder="prediksi">
 				{% endif %}
 
 				<label for="floatingPrediksi">Prediksi</label>
